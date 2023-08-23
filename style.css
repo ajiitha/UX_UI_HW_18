@@ -1,251 +1,89 @@
-/* Targets elements with the class of inline-block */
-.inline-block {
-    display: inline-block;
-    vertical-align: top;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Your combined CSS styles go here */
+        /* ... */
+    </style>
+    <title>My Portfolio</title>
+</head>
+<body>
+    <div class="navigation">
+        <div class="inline-block logo">
+            <img src="logo.png" alt="Logo">
+        </div>
+        <nav class="inline-block">
+            <ul>
+                <li class="inline-block">about</li>
+                <li class="inline-block">skills</li>
+                <li class="inline-block">work</li>
+                <li class="inline-block">contact</li>
+            </ul>
+        </nav>
+    </div>
 
-/* Targets the div with the class of logo */
-.logo {
-    width: 23%;
-    padding: 1%;
-}
+    <section class="heroImg">
+        <div class="content">
+            <img src="me.png" alt="My Picture">
+            <p>
+                Hi there, I'm Ajiitha - a passionate writer who finds joy in sharing stories while designing immersive experiences that put users at the heart of every journey
+            </p>
+            <button id="downloadBtn">Download Resume</button>
+        </div>
+    </section>
 
-/* Targets the nav element */
-nav {
-    width: 73%;
-    padding: 1%;
-}
+    <section class="mySkills">
+        <h1>My UX Skills</h1>
+        <div class="flexContainer">
+            <div class="skill">
+                <img src="ux.jpeg" alt="Skill 1">
+                <h3>User Research</h3>
+                <p>Description of User Research.</p>
+            </div>
+            <div class="skill">
+                <img src="ux2.png" alt="Skill 2">
+                <h3>User Interface</h3>
+                <p>Description of User Interface2.</p>
+            </div>
+            <div class="skill">
+                <img src="ux3.jpeg" alt="Skill 3">
+                <h3>Web Development</h3>
+                <p>Description of Web Development.</p>
+            </div>
+        </div>
+    </section>
 
-/* Centers the unordered list */
-ul {
-    width: 50%;
-    margin-left: auto;
-}
+    <section class="myWork">
+        <h1>My Work</h1>
+        <div class="workGrid">
+            <div class="workItem">
+                <img src="project1.jpeg" alt="Project 1">
+                <h4>Project 1</h4>
+                <p>Description of Project 1.</p>
+                <button>View Project</button>
+            </div>
+            <div class="workItem">
+                <img src="project2.jpeg" alt="Project 2">
+                <h4>Project 2</h4>
+                <p>Description of Project 2.</p>
+                <button>View Project</button>
+            </div>
+            <!-- Add more work items as needed -->
+        </div>
+        <h3>View all projects.</h3>
+    </section>
 
-/* Centers the text inside list items */
-li {
-    padding: 0 10px;
-}
-
-/* Targets the section with the class of heroImg */
-.heroImg {
-    height: 600px;
-    padding: 25px;
-}
-
-/* Targets the div with the class of content */
-.content {
-    width: 500px;
-    margin: 0 auto;
-    display: grid;
-    place-items: center;
-}
-
-/* Center the image inside the content div */
-.content img {
-    max-width: 100%; /* Ensure the image doesn't exceed the container's width */
-}
-
-/* Targets the footer element */
-footer {
-    background-color: #373738;
-    padding: 10px;
-}
-
-/* Targets the ul element inside the footer */
-footer ul {
-    display: inline-block;
-    vertical-align: top;
-    padding: 0;
-}
-/* Styling for "My UX Skills" section */
-section {
-  text-align: center;
-  margin: 30px auto;
-}
-
-h1 {
-  font-size: 30px;
-  margin-bottom: 20px;
-}
-
-div {
-  display: flex;
-  justify-content: space-between;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-/* Styling for skill divs */
-div > div {
-  flex: 1;
-  margin: 10px;
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  background-color: #f9f9f9;
-}
-
-div > div img {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  margin-bottom: 10px;
-}
-
-div > div h1 {
-  font-size: 20px;
-  margin-bottom: 10px;
-}
-
-/* Styling for "My Work" section */
-section:nth-child(2) {
-  background-color: #f9f9f9;
-}
-
-div:nth-child(2) {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-/* Styling for work item divs */
-div:nth-child(2) > div {
-  flex: 0 0 calc(50% - 20px);
-  margin: 10px;
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  background-color: #fff;
-}
-
-div:nth-child(2) > div img {
-  width: 100%;
-  border-radius: 5px;
-  margin-bottom: 10px;
-}
-
-div:nth-child(2) > div h4 {
-  font-size: 18px;
-  margin-bottom: 10px;
-}
-
-div:nth-child(2) > div p {
-  font-size: 14px;
-  margin-bottom: 10px;
-}
-
-div:nth-child(2) > div button {
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  cursor: pointer;
-}
-/* Reset some default browser styles */
-body, h1, h2, h3, h4, p, img, button {
-    margin: 0;
-    padding: 0;
-    border: 0;
-}
-
-/* General styling */
-body {
-    font-family: Arial, sans-serif;
-}
-
-/* My UX Skills section */
-.mySkills {
-    padding: 40px;
-}
-
-.mySkills h1 {
-    font-size: 32px;
-    margin-bottom: 20px;
-}
-
-.flexContainer {
-    display: flex;
-    justify-content: space-between;
-}
-
-.skill {
-    flex-basis: 30%;
-    padding: 20px;
-    border: 1px solid #ccc;
-    text-align: center;
-}
-
-.skill img {
-    width: 60px;
-    height: 60px;
-    margin-bottom: 10px;
-}
-
-.skill h3 {
-    font-size: 18px;
-    margin-bottom: 10px;
-}
-
-/* My Work section */
-.myWork {
-    padding: 40px;
-    background-color: #f5f5f5;
-}
-
-.myWork h1 {
-    font-size: 32px;
-    margin-bottom: 20px;
-}
-
-.workGrid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-}
-
-.workItem {
-    padding: 20px;
-    background-color: white;
-    border: 1px solid #ccc;
-    text-align: center;
-}
-
-.workItem img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 10px;
-}
-
-.workItem h4 {
-    font-size: 18px;
-    margin-bottom: 10px;
-}
-
-.workItem p {
-    margin-bottom: 15px;
-}
-
-button {
-    padding: 8px 20px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-button:hover {
-    background-color: #0056b3;
-}
-
-/* View all projects link */
-.myWork h3 {
-    font-size: 24px;
-    margin-top: 40px;
-}
+    <footer>
+        <ul>
+            <li class="inline-block">about</li>
+            <li class="inline-block">skills</li>
+            <li class="inline-block">work</li>
+            <li class="inline-block">contact</li>
+        </ul>
+    </footer>
+</body>
+</html>
 
